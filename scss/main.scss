@@ -1,0 +1,27 @@
+@use '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@use '../node_modules/@fortawesome/fontawesome-free/scss/solid' with (
+  $fa-font-path: '/fonts/fontawesome'
+);
+@use '../node_modules/@fortawesome/fontawesome-free/scss/brands' with (
+  $fa-font-path: '/fonts/fontawesome'
+);
+
+@use 'colors';
+@use 'fonts';
+
+@use '../node_modules/bulma/bulma' with (
+  $link: colors.$gold,
+  $family-sans-serif: fonts.$family-sans-serif,
+  $widescreen-enabled: false,
+  $fullhd-enabled: false,
+  $text: colors.$gold,
+  $scheme-main: colors.$gold,
+  $footer-background-color: colors.$gold,
+  $footer-color: colors.$black,
+  $text-strong: false,
+  $size-1: 4rem
+);
+
+.hero {
+  background-color: colors.$black;
+}
